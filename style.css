@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 22px;
+    font-family: 'Lobster', sans-serif;
+}
+
+h1 {
+    background-image: linear-gradient(50deg, #D8CDD5, #263B7A);
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 3;
+    position: relative;
+}
+
+header {
+    background-image: url("./img/banner_time1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 550px;
+    margin: -10px;    
+}
+
+
+.pomodor_banner {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    z-index: 2;
+    position:relative;
+    color: white;
+}
+
+.timer_block {
+    display: block;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+}
+
+.timer span {
+    background-color: black;
+    color: white;
+    font-size: 150px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.timer .dot {
+    background-color: white;
+    color: black;
+}
+
+.start {
+    background-color: green;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.stop {
+    background-color: red;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.todo_block {
+    display: block;
+    text-align: center;
+    margin: 10px 10px;
+
+}
+
+form {
+    margin: 10px 10px;
+    display: block;
+}
+
+.todo_container {
+    display: block;
+    text-align: left;
+    margin-left: 36%;
+    padding: 10px 10px;
+    background-image: url('./img/board.jpg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#todo_input {
+    border-radius: 10px solid;
+    padding: 14px 10px;
+    background-color: #D8CDD5;
+    font-size: 16px;
+    border: none;
+}
+
+.btn {
+    background-color: green;
+    border: none;
+    border-radius: 50%;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+ul li input{
+    list-style: none;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+input:checked {
+    height: 20px;
+    width: 20px;
+    accent-color: green;
+}
+
+input:checked + span {
+    text-decoration: line-through;
+}
+
+.delete {
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}

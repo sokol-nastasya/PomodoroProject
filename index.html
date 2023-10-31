@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro</title>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/70b1e53c20.js" crossorigin="anonymous"></script>
+        <!-- style css -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- google fonts for timer -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+        <!-- google fonts general text -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="pomodor_banner">
+                <h1>Pomodoro helper</h1>
+                 <p>The Pomodoro Technique is a time management method based on 25-minute stretches
+                 of focused work broken by five-minute breaks. <br> Longer breaks, typically 
+                 15 to 30 minutes, are taken after four consecutive work intervals.<br> 
+                 Each work interval is called a pomodoro, the Italian word for tomato (plural: pomodori).
+                </p>
+            </div>
+        </header>
+        <main>
+            <section class="timer_block">
+                <div class="timer" id="timer">
+                    <span data-value="minutes" id="minutes">25</span>
+                    <span class="dot">:</span>
+                    <span data-value="seconds" id="seconds">00</span>
+                </div>
+                <div class="start_timer">
+                    <button class="start" onclick="startTimer()">Start Timer</button>
+                    <button class="stop" onclick="resetTimer()">Stop Timer</button>
+                </div>
+            </section>
+            <section class="todo_block">
+                <h2>Make your TO-Do list and manage your time:</h2>
+                <form method="post">
+                    <label for="todo_input">Write your To Do:</label>
+                    <input id="todo_input" type="text" name="text_input" required>
+                    <button class="btn" type="button" onclick="addTask();"><i class="fa-solid fa-plus"></i></button>
+                </form>
+                <div class="todo_container">
+                    <ul id="list-container">
+                    </ul>
+                </div>
+                
+            </section>
+            
+        </main>
+        <script src="./main.js"></script>
+    </body>
+   
+</html>
